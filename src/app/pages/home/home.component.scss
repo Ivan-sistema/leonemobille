@@ -1,0 +1,46 @@
+#leonemobille {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  .container {
+    .about {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+
+      .quemsomos {
+        background: #fff;
+        padding: 40px;
+        text-align: right;
+        position: relative;
+        display: grid;
+        gap: 20px;
+        align-content: center;
+        justify-items: end;
+      }
+      .subtitulo {
+        font-size: 64px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.2);
+        text-align: right;
+        padding: 40px;
+        align-self: center;
+      }
+      .vantagens {
+        background: #fff;
+        padding: 40px;
+
+        &__item {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          gap: 10px 20px;
+          padding: 20px;
+
+          p {
+            grid-column: 2;
+          }
+        }
+      }
+    }
+  }
+}
